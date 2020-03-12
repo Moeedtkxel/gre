@@ -1,3 +1,5 @@
+from rest_framework.permissions import AllowAny
+
 from users.models import User
 from rest_framework import generics, permissions, status
 from rest_framework.views import APIView
@@ -56,6 +58,7 @@ class AuthRegister(APIView):
     """
     Register a new user
     """
+    permission_classes = (AllowAny,)
     serializer_class = UserSerializer
     # permission_classes = [
     #     permissions.IsAdminUser,

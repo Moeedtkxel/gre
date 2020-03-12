@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 import datetime
 import os
+
 # import django_heroku
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -40,16 +41,14 @@ INSTALLED_APPS = [
     'users',
     'rest_framework_swagger',
     'corsheaders',
+    'rest_framework',
+    'rest_framework.authtoken'
 ]
-#
-AUTHENTICATION_BACKENDS = (
-    'django.contrib.auth.backends.ModelBackend',
-)
+
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': (
         'rest_framework.permissions.IsAuthenticated',
-        'rest_framework.permissions.IsAuthenticatedOrReadOnly',
     ),
     'DEFAULT_SCHEMA_CLASS': 'rest_framework.schemas.coreapi.AutoSchema',
     'DEFAULT_AUTHENTICATION_CLASSES': (
@@ -96,10 +95,20 @@ WSGI_APPLICATION = 'reFav.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+#     }
+# }
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dwunrphu',
+        'USER': 'dwunrphu',
+        'PASSWORD': 'vqRB3j_j0I6vLRAkhv34scuQZ3EzScAj',
+        'HOST': 'satao.db.elephantsql.com',
+        'PORT': '5432',
     }
 }
 
@@ -134,7 +143,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-WT_AUTH = {
+JWT_AUTH = {
     'JWT_ENCODE_HANDLER':
         'rest_framework_jwt.utils.jwt_encode_handler',
 
