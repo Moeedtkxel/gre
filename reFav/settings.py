@@ -42,7 +42,13 @@ INSTALLED_APPS = [
     'rest_framework_swagger',
     'corsheaders',
     'rest_framework',
-    'rest_framework.authtoken'
+    'rest_framework.authtoken',
+    'images',
+    'answers',
+    'custom_answers',
+    'questions_detail',
+    'questions',
+    'results',
 ]
 
 
