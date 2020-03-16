@@ -7,3 +7,5 @@ class Questions_detail(models.Model):
     test_id = models.IntegerField(null=False)
     question = models.ForeignKey('questions.Questions', null=False, related_name='questionId', on_delete=models.CASCADE)
 
+    def __str__(self):
+        return str(self.id)

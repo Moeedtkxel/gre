@@ -8,3 +8,6 @@ class Results(models.Model):
                                         on_delete=models.CASCADE)
     answer = models.CharField(max_length=255, null=True)
     custom_answer = models.CharField(max_length=255, null=True)
+
+    def __str__(self):
+        return str(self.test_taker.username)

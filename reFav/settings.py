@@ -48,7 +48,7 @@ INSTALLED_APPS = [
     'custom_answers',
     'questions_detail',
     'questions',
-    'results',
+        'results',
 ]
 
 
@@ -110,10 +110,10 @@ WSGI_APPLICATION = 'reFav.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'dwunrphu',
-        'USER': 'dwunrphu',
-        'PASSWORD': 'vqRB3j_j0I6vLRAkhv34scuQZ3EzScAj',
-        'HOST': 'satao.db.elephantsql.com',
+        'NAME': 'd7pugp3ibqir2d',
+        'USER': 'wfvxbnvohakirz',
+        'PASSWORD': '565491e5012ab9c865482e8f7b568bd283a5635116b71adfbee6915d8f76a068',
+        'HOST': 'ec2-54-195-247-108.eu-west-1.compute.amazonaws.com',
         'PORT': '5432',
     }
 }
