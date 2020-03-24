@@ -9,7 +9,7 @@ class UserSerializer(serializers.ModelSerializer):
     #     return '{}'.format(obj.username)
 
     password = serializers.CharField(write_only=True, required=True)
-    confirm_password = serializers.CharField(write_only=True, required=True)
+    # confirm_password = serializers.CharField(write_only=True, required=True)
 
     def create(self, validated_data):
         print("Creating user")
