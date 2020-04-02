@@ -56,3 +56,6 @@ class User(AbstractBaseUser, PermissionsMixin):
 
     def __unicode__(self):
         return '%s' % self.username
+
+    def __str__(self):
+        return str(self.username)
