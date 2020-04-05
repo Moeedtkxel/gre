@@ -11,7 +11,7 @@ class QuestionDetailList(generics.ListAPIView):
     queryset = Questions_detail.objects.all()
     serializer_class = QuestionDetailSerializer
 
-    filter_backends = (DjangoFilterBackend,)
+    # filter_backends = (DjangoFilterBackend,)
     filter_class = QuestionDetailSerializer
 
     def get_queryset(self):
