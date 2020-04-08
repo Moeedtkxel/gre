@@ -10,7 +10,8 @@ class QuestionDetailSerializer(serializers.ModelSerializer):
     optionB = serializers.CharField(source="question.optionB", read_only=True)
     optionC = serializers.CharField(source="question.optionC", read_only=True)
     optionD = serializers.CharField(source="question.optionD", read_only=True)
+
     class Meta:
         model = Questions_detail
         fields = '__all__'
-        read_only_fields = ('text','question_type',)
+        read_only_fields = ('text', 'question_type',)

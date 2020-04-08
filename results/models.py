@@ -6,9 +6,10 @@ from rest_framework.exceptions import ValidationError
 
 
 class Results(models.Model):
-    test_taker = models.ForeignKey('users.User', null=False, related_name='testtakerId', on_delete=models.CASCADE)
-    question_detail = models.ForeignKey('questions_detail.Questions_detail', null=False, related_name='answersId',
+    test_taker = models.ForeignKey('users.User', null=True, related_name='testtakerId', on_delete=models.CASCADE)
+    question_detail = models.ForeignKey('questions_detail.Questions_detail', null=True, related_name='answersId',
                                         on_delete=models.CASCADE)
+    test_id = models.IntegerField(null=True)
     answer = models.CharField(max_length=255, null=True)
     custom_answer = models.CharField(max_length=255, null=True)
 
