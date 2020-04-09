@@ -2,8 +2,6 @@ from django.db import models
 
 
 # Create your models here.
-from rest_framework.exceptions import ValidationError
-
 
 class Results(models.Model):
     test_taker = models.ForeignKey('users.User', null=True, related_name='testtakerId', on_delete=models.CASCADE)
@@ -12,10 +10,21 @@ class Results(models.Model):
     test_id = models.IntegerField(null=True)
     answer = models.CharField(max_length=255, null=True)
     custom_answer = models.CharField(max_length=255, null=True)
-
-    def clean(self):
-        if self.answer is None and self.custom_answer is None:
-            raise ValidationError(_('field1 or field2 should not be null'))
+    isActive = models.BooleanField(default=True, null=False)
 
     def __str__(self):
         return str(self.test_taker.username)
+
+
+class Time(models.Model):
+    total_time = models.IntegerField(choices=((1, "Normal TIme"),
+                                              (2, "1.5x time"),
+                                              (3, "Double Time"),
+                                              (4, "Full time"),),
+                                     default=1)
+    time_left = models.FloatField(max_length=255, )
+    test_id = models.IntegerField()
+    test_taker = models.ForeignKey('users.User', null=True, related_name='timerId', on_delete=models.CASCADE)
+
+    def __str__(self):
+        return str(self.time_left)

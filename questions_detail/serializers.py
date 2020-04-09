@@ -13,5 +13,5 @@ class QuestionDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Questions_detail
-        fields = '__all__'
+        fields = ('text', 'question_type', 'optionA', 'optionB', 'optionC', 'optionD','question')
         read_only_fields = ('text', 'question_type',)

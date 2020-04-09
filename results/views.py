@@ -1,17 +1,14 @@
-from django.shortcuts import render
-
 # Create your views here.
+from django.db.models import Q
 from rest_framework import generics, status
 from rest_framework.response import Response
-from rest_framework_bulk import ListBulkCreateUpdateDestroyAPIView
-
-from results.models import Results
-from results.serializers import ResultsSerializer
+from results.models import Results, Time
+from results.serializers import CreateResultsSerializer, GetResultsSerializer, GetTimeSerializer
 
 
 class AddResult(generics.CreateAPIView):
     lookup_field = 'pk'
-    serializer_class = ResultsSerializer
+    serializer_class = CreateResultsSerializer
 
     def get_queryset(self):
         return Results.objects.all()
@@ -27,3 +24,19 @@ class AddResult(generics.CreateAPIView):
         }
         return Response(response_data, status=status.HTTP_201_CREATED,
                         headers=headers)
+
+
+class GetResult(generics.ListAPIView):
+    lookup_field = 'pk'
+    serializer_class = GetResultsSerializer
+
+    def get_queryset(self):
+        return Results.objects.all().filter(test_taker=self.request.user, isActive=True)
+
+
+class GetTime(generics.ListAPIView):
+    lookup_field = 'pk'
+    serializer_class = GetTimeSerializer
+
+    def get_queryset(self):
+        return Time.objects.filter(test_taker=self.request.user, ).filter((~Q(time_left=0)))
