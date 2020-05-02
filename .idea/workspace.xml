@@ -2,23 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="10e2e64b-3ae8-42cb-acb0-dbf5df4c72f7" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answers/migrations/0002_auto_20200424_1630.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answers/migrations/0003_auto_20200424_1634.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answers/migrations/0004_auto_20200424_1908.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answers/migrations/0005_answers_multiple_answer.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/answers/migrations/0006_auto_20200426_1830.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_detail/lookupanswerId.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_detail/migrations/0002_auto_20200424_1634.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_detail/migrations/0003_auto_20200424_1908.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_detail/migrations/0004_auto_20200425_0311.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/questions_detail/migrations/0005_auto_20200425_0312.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dictionaries/MK.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/MK.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/reFav.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/reFav.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answers/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/answers/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answers/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/answers/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/answers/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/answers/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_answers/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_answers/admin.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_answers/apps.py" beforeDir="false" />
@@ -27,8 +13,6 @@
       <change beforePath="$PROJECT_DIR$/custom_answers/models.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_answers/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/custom_answers/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/images/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/images/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/images/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/__init__.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/admin.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/apps.py" beforeDir="false" />
@@ -43,24 +27,10 @@
       <change beforePath="$PROJECT_DIR$/questions/tests.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/urls.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/questions/views.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_detail/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions_detail/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_detail/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions_detail/migrations/0001_initial.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_detail/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions_detail/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_detail/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions_detail/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_detail/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions_detail/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/questions_detail/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/questions_detail/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reFav/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/reFav/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/reFav/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/reFav/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/results/migrations/0001_initial.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/results/migrations/0002_auto_20200407_0011.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/migrations/0003_results_test_id.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/migrations/0004_time.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/results/migrations/0005_results_isactive.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/results/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/serializers.py" beforeDir="false" afterPath="$PROJECT_DIR$/results/serializers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/results/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/results/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/results/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/migrations/0001_initial.py" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/venv/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -214,26 +184,6 @@
               <item name="GRE" type="b2602c69:ProjectViewProjectNode" />
               <item name="GRE" type="462c0819:PsiDirectoryNode" />
               <item name=".ebextensions" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GRE" type="462c0819:PsiDirectoryNode" />
-              <item name="answers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GRE" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GRE" type="462c0819:PsiDirectoryNode" />
-              <item name="questions_detail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GRE" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GRE" type="462c0819:PsiDirectoryNode" />
-              <item name="results" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
