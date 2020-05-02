@@ -5,5 +5,8 @@ from django.db import models
 class Images(models.Model):
     image = models.BinaryField(null=False)
 
+    class Meta:
+        db_table = "images"
+
     def __str__(self):
         return str(self.id)

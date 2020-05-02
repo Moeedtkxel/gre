@@ -9,8 +9,11 @@ class Results(models.Model):
                                         on_delete=models.CASCADE)
     test_id = models.IntegerField(null=True)
     answer = models.CharField(max_length=255, null=True)
-    custom_answer = models.CharField(max_length=255, null=True)
+    text_answer = models.CharField(max_length=255, null=True)
     isActive = models.BooleanField(default=True, null=False)
+
+    class Meta:
+        db_table = "results"
 
     def __str__(self):
         return str(self.test_taker.username)
@@ -26,5 +29,18 @@ class Time(models.Model):
     test_id = models.IntegerField()
     test_taker = models.ForeignKey('users.User', null=True, related_name='timerId', on_delete=models.CASCADE)
 
+    class Meta:
+        db_table = "time"
+
+
+class Marks(models.Model):
+    test_taker = models.ForeignKey('users.User', null=True, related_name='testtakerIdforMarks',
+                                   on_delete=models.CASCADE)
+    test_id = models.IntegerField(null=False)
+    marks = models.IntegerField(null=False)
+
+    class Meta:
+        db_table = "marks"
+
     def __str__(self):
-        return str(self.time_left)
+        return str(self.test_taker.username)

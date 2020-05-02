@@ -2,8 +2,10 @@
 from django.db.models import Q
 from rest_framework import generics, status
 from rest_framework.response import Response
+from rest_framework.views import APIView
+
 from results.models import Results, Time
-from results.serializers import CreateResultsSerializer, GetResultsSerializer, GetTimeSerializer
+from results.serializers import CreateResultsSerializer, GetResultsSerializer, GetTimeSerializer, GetMarksSerializer
 
 
 class AddResult(generics.CreateAPIView):
@@ -40,3 +42,14 @@ class GetTime(generics.ListAPIView):
 
     def get_queryset(self):
         return Time.objects.filter(test_taker=self.request.user, ).filter((~Q(time_left=0)))
+
+
+class GetMarks(generics.ListAPIView):
+    lookup_field = 'pk'
+
+    serializer_class = GetMarksSerializer
+
+    def get_queryset(self):
+        R = Results.objects.filter(
+            test_id=1)  # A.filter(ActualAnswer=answer)  # .values()  # return ValuesQuerySet object
+        return R

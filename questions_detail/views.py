@@ -13,10 +13,12 @@ from .models import Questions_detail
 class QuestionDetailList(generics.ListAPIView):
     queryset = Questions_detail.objects.all()
     serializer_class = QuestionDetailSerializer
-    filter_backends = (filters.DjangoFilterBackend,)
+    # filter_backends = (filters.DjangoFilterBackend,)
 
     # filter_backends = (DjangoFilterBackend,)
-    filter_class = QuestionFilter
+    # filter_class = QuestionFilter
 
     def get_queryset(self):
         return Questions_detail.objects.all().filter()
+
+
