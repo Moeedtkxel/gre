@@ -45,7 +45,7 @@ class QuestionSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Questions
-        fields = '__all__'
+        fields = ('text', 'options' , 'question_type')
 
 
 class QuestionDetailSerializer(serializers.ModelSerializer):
@@ -54,7 +54,7 @@ class QuestionDetailSerializer(serializers.ModelSerializer):
 
     class Meta:
         model = Questions_detail
-        fields = ('question_type', 'question', 'difficulty_level')
+        fields = ('id','question_type', 'question',)
         read_only_fields = ('question_type',)
         # depth = 2
 
@@ -108,6 +108,7 @@ class QuestionDetailSerializer(serializers.ModelSerializer):
                             listofdicts.append(dict2)
                             listofdicts.append(dict3)
                             represenation['options'] = listofdicts
+                    del represenation['question_type']
                 ret[field.field_name] = represenation
 
         return ret

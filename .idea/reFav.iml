@@ -16,8 +16,10 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/venv" />
       <excludeFolder url="file://$MODULE_DIR$/venv2" />
+      <excludeFolder url="file://$MODULE_DIR$/venvGre" />
+      <excludeFolder url="file://$MODULE_DIR$/venvGre3" />
     </content>
-    <orderEntry type="jdk" jdkName="Python 3.7 (GRE)" jdkType="Python SDK" />
+    <orderEntry type="jdk" jdkName="Python 3.5 (GRE)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="R User Library" level="project" />
     <orderEntry type="library" name="R Skeletons" level="application" />
